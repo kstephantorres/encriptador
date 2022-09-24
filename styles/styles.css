@@ -1,0 +1,247 @@
+body{
+    background-color: #F3F5FC;
+    height: 100vh;
+    display: flex;
+}
+header{
+    flex-basis: 240px;
+}
+main{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    flex-basis: 100%;
+    display: grid;
+    grid-template-columns: auto 480px;
+    grid-template-rows: auto;
+}
+button {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    width: 328px;
+    height: 67px;
+    text-align: center;
+    /*display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 24px;
+    gap: 8px;
+    */
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+}
+h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+    
+    
+    margin-bottom: 16px;
+}
+.texto-temporal{
+    text-align: center;
+    padding: 0 25px;
+}
+.texto-temporal p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contenedor-mensaje{
+    /* position: absolute; grid*/
+    width: 400px;
+    /* height: 100%; */
+    left: 1000px;
+    top: 40px;
+    padding: 32px;
+    background: #FFFFFF; /* cambiar a #FFFFFF*/
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 240px;
+    
+}
+.logo{
+    margin-left: 84px;
+    margin-top: 40px;
+}
+.input-texto{
+    width: 100%;
+    height: 83%;
+    border: none;
+    background-color: #F3F5FC;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border-radius: 24px;
+}
+.input-mensaje{
+    width: 100%;
+    height: 88%; 
+    border: none;
+    background-color: #FFFFFF;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+.input-mensaje:focus{
+    outline:none;
+} 
+
+.input-texto:focus{
+    outline:none;
+} 
+.input-texto::placeholder{
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+.atencion{
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    margin-bottom: 16px;
+    color: #495057;
+    opacity: 0.8;
+}
+.atencion svg{
+    margin-right: 5px;
+}
+.contenedor-input{
+    padding: 100px 25px 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.boton-copiar{
+    background-color: #FFFFFF;
+    color: #0A3871;
+}
+.boton-copiar:hover{
+    background-color: #D8DFE8;
+}
+.boton-encriptar{
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+.boton-encriptar:hover{
+    background-color: #053166;
+}
+.boton-desencriptar{
+    color: #0A3871;
+}
+.boton-desencriptar:hover{
+    background-color: #D8DFE8;
+}
+.no-mostrar{
+    visibility: hidden; 
+    /* width: 0px; */
+    height: 0px;
+    margin:0px;
+}
+/* 1277 */
+@media screen and (max-width:1276px){
+    body{
+        flex-direction: column;
+    }
+    main{
+        padding-left: 40px;
+        padding-top: 0;
+    }
+    .logo{
+        margin-left: 40px;
+    }
+    header{
+        flex-basis: 100px;
+    }
+    .contenedor-input{
+        padding-top: 50px;
+    }
+
+}
+/* 1201 */
+@media screen and (max-width:1205px){
+    main{
+        grid-template-columns: auto;
+        padding-right: 40px;
+    }
+    .muñeco{
+        visibility: hidden; 
+        width: 0px;
+        /* height: 0px; */
+    }
+    .contenedor-mensaje{
+        /* padding: 0; vh */
+        width: auto;
+        /* margin-top: 24px; */
+    }
+    .contenedor-input{
+        padding-right: 0;
+    }
+    
+}
+/*740*/
+@media screen and (max-width:740px){
+  
+    button{
+        width: 45%;
+    }
+    .contenedor-mensaje{
+        margin-top: 24px;
+    }
+    body{
+        min-height: 933px;
+    }
+}
+@media screen and (max-width:420px){
+    
+    .botones{
+        flex-direction: column;
+    }
+    button{
+        width: 100%;
+    }
+    .boton-desencriptar{
+        margin-top: 24px;
+    }
+    .contenedor-input{
+        height: auto;
+    }
+    .input-texto{
+        height: 65%;
+    }
+    .contenedor-mensaje{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:322px){
+    .contenedor-mensaje{
+        margin-top: 24px;
+        
+    }
+}
